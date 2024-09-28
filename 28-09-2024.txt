@@ -1,0 +1,66 @@
+# to install packages in R
+
+SYNTAX == 
+
+	 install.packages("// package name/")
+
+ex:
+ 
+	install.packages("ggplot2")
+
+#removes packages in R
+
+SYNTAX ==
+
+	 remove.packages("//package name//")
+
+ex:
+
+	remove.packages("ggplot2")
+
+#to import or to load the Rscript file
+
+SYNTAX == 
+
+	 library(//packagename//)
+
+ex:
+
+	library(ggplot2)
+
+#to unload or to detach the package from directory
+
+SYNTAX ==
+ 
+	detach("package://packagename//",unload=TRUE)
+
+EX:
+
+	detach("package:ggplot2",unload=TRUE)
+
+#to know more about the command
+
+SYNTAX:
+
+	?COMMANDNAME
+
+EX:
+
+	?print()
+	?summary()
+
+#in R,MTCARS is dataset for analysing the data
+
+	>mtcars -- dataset syntax
+
+
+commands:
+
+1. >summary(mtcars)
+2. >str(mtcars)
+3. >quantile(mtcars$mpg)
+4. >summary(cars)
+5. >class(cars)
+6. >dim(cars)
+7. >str(cars)
+8. >quantile(cars$speed)
